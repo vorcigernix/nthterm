@@ -89,7 +89,7 @@
 			</svg>
 		</button>
 	</div>
-	<ul class={open ? `flex flex-col space-y-6 my-6 md:hidden` : `hidden`}>
+	<ul class={open ? `flex flex-col pt-20 space-y-8 min-h-screen md:hidden text-xl font-bold items-center` : `hidden`}>
 		<li class="flex">
 			<a
 				href="/"
