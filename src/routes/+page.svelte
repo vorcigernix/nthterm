@@ -1,4 +1,4 @@
-<section class=" text-gray-100">
+<section class="text-gray-100">
 	<div
 		class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-around"
 	>
