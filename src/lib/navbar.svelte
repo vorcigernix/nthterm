@@ -6,12 +6,11 @@
 	import { page } from '$app/stores';
 </script>
 
-<nav class="p-4 text-gray-100 sticky top-0 z-10 bg-black/50 backdrop-blur-md ">
+<nav class="p-4 text-gray-100 sticky top-0 z-10 md:bg-black/50 bg-black md:backdrop-blur-md ">
 	<div class="container flex justify-between h-16 mx-auto md:justify-center md:space-x-8">
 		<ul class="items-stretch hidden space-x-3 md:flex">
 			<li class="flex">
 				<a
-					rel="noopener noreferrer"
 					href="/"
 					class="flex items-center px-4 -mb-1 border-b-2 border-transparent"
 					on:click={() => (open = false)}
@@ -20,7 +19,6 @@
 			</li>
 			<li class="flex">
 				<a
-					rel="noopener noreferrer"
 					href="/mentors"
 					on:click={() => (open = false)}
 					class:active={$page.url.pathname === '/mentors'}
@@ -29,7 +27,6 @@
 			</li>
 			<li class="flex">
 				<a
-					rel="noopener noreferrer"
 					href="/sessions"
 					on:click={() => (open = false)}
 					class:active={$page.url.pathname === '/sessions'}
@@ -37,16 +34,11 @@
 				>
 			</li>
 		</ul>
-		<a
-			rel="noopener noreferrer"
-			href="/"
-			aria-label="Back to homepage"
-			class="flex items-center p-2"
-		>
+		<a href="/" aria-label="Back to homepage" class="flex items-center p-2">
 			<svg
 				fill="currentColor"
 				viewBox="0 0 32 32"
-				class="w-8 h-8 text-lime-400"
+				class="w-8 h-8 text-lime-500"
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<path
@@ -62,7 +54,6 @@
 		<ul class="items-stretch hidden space-x-3 md:flex">
 			<li class="flex">
 				<a
-					rel="noopener noreferrer"
 					href="/topics"
 					on:click={() => (open = false)}
 					class:active={$page.url.pathname === '/topics'}
@@ -71,7 +62,6 @@
 			</li>
 			<li class="flex">
 				<a
-					rel="noopener noreferrer"
 					href="/about"
 					on:click={() => (open = false)}
 					class:active={$page.url.pathname === '/about'}
@@ -79,10 +69,7 @@
 				>
 			</li>
 			<li class="flex">
-				<button
-					rel="noopener noreferrer"
-					class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Connect</button
-				>
+				<button class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Connect</button>
 			</li>
 		</ul>
 		<button class="p-4 md:hidden" on:click={() => (open = !open)}>
@@ -102,6 +89,51 @@
 			</svg>
 		</button>
 	</div>
+	<ul class={open ? `flex flex-col space-y-6 my-6 md:hidden` : `hidden`}>
+		<li class="flex">
+			<a
+				href="/"
+				class="flex items-center px-4 -mb-1 border-b-2 border-transparent"
+				on:click={() => (open = false)}
+				class:active={$page.url.pathname === '/'}>Home</a
+			>
+		</li>
+		<li class="flex">
+			<a
+				href="/mentors"
+				on:click={() => (open = false)}
+				class:active={$page.url.pathname === '/mentors'}
+				class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Mentors</a
+			>
+		</li>
+		<li class="flex">
+			<a
+				href="/sessions"
+				on:click={() => (open = false)}
+				class:active={$page.url.pathname === '/sessions'}
+				class="flex items-center px-4 -mb-1 border-b-2 border-transparent">My Sessions</a
+			>
+		</li>
+		<li class="flex">
+			<a
+				href="/topics"
+				on:click={() => (open = false)}
+				class:active={$page.url.pathname === '/topics'}
+				class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Topics</a
+			>
+		</li>
+		<li class="flex">
+			<a
+				href="/about"
+				on:click={() => (open = false)}
+				class:active={$page.url.pathname === '/about'}
+				class="flex items-center px-4 -mb-1 border-b-2 border-transparent">About</a
+			>
+		</li>
+		<li class="flex">
+			<button class="flex items-center px-4 -mb-1 border-b-2 border-transparent">Connect</button>
+		</li>
+	</ul>
 </nav>
 
 <style>

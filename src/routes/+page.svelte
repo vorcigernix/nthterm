@@ -8,10 +8,10 @@
 			</h1>
 			<p class="mt-6 mb-8 text-lg sm:mb-12">
 				We created a system for mentors <span
-					class="underline decoration-lime-400 decoration-dotted">from community</span
+					class="underline decoration-lime-400 decoration-dotted">from the community</span
 				>
 				<br class="hidden md:inline lg:hidden" />to help people
-				<span class="underline decoration-lime-400 decoration-dotted">in community</span>.
+				<span class="underline decoration-lime-400 decoration-dotted">in the community</span>.
 			</p>
 			<div
 				class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
@@ -34,7 +34,7 @@
 			<img
 				src="https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=952&q=80"
 				alt="illustrative"
-				class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 bg-gray-500 mt-12"
+				class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 bg-gray-500 mt-12 hexagon"
 			/>
 		</div>
 	</div>
